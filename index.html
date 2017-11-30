@@ -1,1 +1,735 @@
-Hello World
+<html class="no-js gr__robobrain_me">
+
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide {
+            display: none !important;
+        }
+        
+        ng\:form {
+            display: block;
+        }
+        
+        .ng-animate-block-transitions {
+            transition: 0s all!important;
+            -webkit-transition: 0s all!important;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Robo Brain</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="arpit, agarwal, ashutosh, saxena, aditya, jami, ashesh, jain, ozan, sener, dipendra, misra, planit, tell me dave, plan it, tellmedave, robots, 3d images, cornell, stanford, machine learning, artificial intelligence, hema, koppula, large scale systems, large scale, knowledge base, knowledge engine,knowledge vault, grasping, robot grasping, dishwasher unloading, make3d, assistive, personal, robots, point cloud, humanoid, kinect, rgbd, robot manipulation, computer vision, robotics, robot learning, research, computer, cs, learning, vision, ai, perception, videos">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/lib/sweet-alert.css"> </head>
+
+<body ng-app="roboBrainApp" data-gr-c-s-loaded="true" class="ng-scope" style="">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container ng-scope" ng-controller="LoginCtrl">
+        <div class="navbar navbar-default no-border" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" ng-href="#/" href="#/"> <img class="brand-logo" src="images/logo.svg"> <span class="brand-text">Robo Brain</span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right" id="menu">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a ng-href="#/graph">Graph</a></li> -->
+                    <!-- <li><a ng-href="#/search">Search</a></li> -->
+                    <!-- <li><a ng-href="#/research">Research</a></li> -->
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="">Graph</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ngView:  -->
+        <div ng-view="" class="ng-scope">
+            <br class="ng-scope">
+            <div class="row ng-scope">
+                <div class="col-sm-3 col-xs-6"> <img class="img-responsive" src="images/logo.svg"> </div>
+                <div class="col-sm-9 col-xs-12">
+                    <blockquote>
+                        <p class="lead"> Hey there<b><!-- ngIf: user --></b>! I'm a robot brain. I learn concepts by searching the Internet. I can interpret natural language text, images, and videos. I watch humans with my sensors and learn things from interacting with them. Here are a few things I've learned recently... </p>
+                    </blockquote>
+                </div>
+            </div>
+            <br class="ng-scope">
+            <br class="ng-scope">
+            <ul class="list-unstyled ng-scope ng-isolate-scope" infinite-scroll="moreRecent()">
+                <!-- ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="5420ce1242499173ddd83033" class="panel panel-default feed-0">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=sitting_human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=sitting_human"> <strong class="ng-binding">sitting_human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> can </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=wear" ng-switch-when="#" class="ng-scope" href="#/query?hashword=wear"> <strong class="ng-binding">wear</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cap" ng-switch-when="#" class="ng-scope" href="#/query?hashword=cap"> <strong class="ng-binding">cap</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> as </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> shown </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$heatmap_1." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$heatmap_1."> <strong class="ng-binding">$heatmap_1.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/sitting_human/wear/cap/heatmap_1/cutting_frame_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/sitting_human/wear/cap/heatmap_1/cutting_frame_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/sitting_human/wear/cap/heatmap_1/cutting_result_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/sitting_human/wear/cap/heatmap_1/cutting_result_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Anticipation" href="#/query?type=Anticipation"> <span class="label label-primary ng-binding">Anticipation</span> </a> <a href="http://pr.cs.cornell.edu/anticipation/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/anticipation/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 11 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 474 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-0" ng-href="static/comments.html?id=The #sitting_human can #wear a #cap as shown in #$heatmap_1." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The #sitting_human can #wear a #cap as shown in #$heatmap_1.')" href="static/comments.html?id=The #sitting_human can #wear a #cap as shown in #$heatmap_1."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="546e8e22424991404effb37d" class="panel panel-default feed-1">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=tongs" ng-switch-when="#" class="ng-scope" href="#/query?hashword=tongs"> <strong class="ng-binding">tongs</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> type </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> of </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cookingutensil." ng-switch-when="#" class="ng-scope" href="#/query?hashword=cookingutensil."> <strong class="ng-binding">cookingutensil.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=OpenCyc" href="#/query?type=OpenCyc"> <span class="label label-primary ng-binding">OpenCyc</span> </a> <a href="http://sw.opencyc.org"><span class="label label-primary ng-binding">http://sw.opencyc.org</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 246 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 26 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-1" ng-href="static/comments.html?id=#tongs is a type of #cookingutensil." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#tongs is a type of #cookingutensil.')" href="static/comments.html?id=#tongs is a type of #cookingutensil."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="5424932042499119458f9e54" class="panel panel-default feed-2">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=human"> <strong class="ng-binding">human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> and </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=robot" ng-switch-when="#" class="ng-scope" href="#/query?hashword=robot"> <strong class="ng-binding">robot</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> can </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> use </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cup" ng-switch-when="#" class="ng-scope" href="#/query?hashword=cup"> <strong class="ng-binding">cup</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> to </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=drink" ng-switch-when="#" class="ng-scope" href="#/query?hashword=drink"> <strong class="ng-binding">drink</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> and </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=pour" ng-switch-when="#" class="ng-scope" href="#/query?hashword=pour"> <strong class="ng-binding">pour</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> respectively. </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> . </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=POC2" href="#/query?type=POC2"> <span class="label label-primary ng-binding">POC2</span> </a> <a href="http://robobrain.me"><span class="label label-primary ng-binding">http://robobrain.me</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 275 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 26 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-2" ng-href="static/comments.html?id=#human and #robot can use #cup to #drink and #pour respectively. ." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#human and #robot can use #cup to #drink and #pour respectively. .')" href="static/comments.html?id=#human and #robot can use #cup to #drink and #pour respectively. ."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54212a1d42499126f2431d24" class="panel panel-default feed-3">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=floor" ng-switch-when="#" class="ng-scope" href="#/query?hashword=floor"> <strong class="ng-binding">floor</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> has </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> following </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> appearance </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$image." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$image."> <strong class="ng-binding">$image.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/2b_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/2b_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/3b_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/3b_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Hierarchical Semantic Labeling" href="#/query?type=Hierarchical Semantic Labeling"> <span class="label label-primary ng-binding">Hierarchical Semantic Labeling</span> </a> <a href="http://pr.cs.cornell.edu/sceneunderstanding/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/sceneunderstanding/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 283 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 14 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-3" ng-href="static/comments.html?id=#floor has the following appearance in the #$image." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#floor has the following appearance in the #$image.')" href="static/comments.html?id=#floor has the following appearance in the #$image."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="551343d35e5d6404eb5b172a" class="panel panel-default feed-0">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=medium_shelf" ng-switch-when="#" class="ng-scope" href="#/query?hashword=medium_shelf"> <strong class="ng-binding">medium_shelf</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> has </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> following </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> distribution </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> for </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=on" ng-switch-when="#" class="ng-scope" href="#/query?hashword=on"> <strong class="ng-binding">on</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/medium_shelf/on/medium_shelf_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/medium_shelf/on/medium_shelf_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/medium_shelf/on/heatmap_onzj35qx_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/medium_shelf/on/heatmap_onzj35qx_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Brown Spatial Language Understanding G^3" href="#/query?type=Brown Spatial Language Understanding G^3"> <span class="label label-primary ng-binding">Brown Spatial Language Understanding G^3</span> </a> <a href="http://h2r.cs.brown.edu/projects/spatial-language-understanding/"><span class="label label-primary ng-binding">http://h2r.cs.brown.edu/projects/spatial-language-understanding/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 42 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 6 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-5" ng-href="static/comments.html?id=#medium_shelf has the following distribution for #on" class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#medium_shelf has the following distribution for #on')" href="static/comments.html?id=#medium_shelf has the following distribution for #on"></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54800ea35e5d64087e92c6a1" class="panel panel-default feed-1">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> position </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> of </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=Standing_human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=Standing_human"> <strong class="ng-binding">Standing_human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> while </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> using </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=phone" ng-switch-when="#" class="ng-scope" href="#/query?hashword=phone"> <strong class="ng-binding">phone</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> distributed </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> as </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$heatmap_10." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$heatmap_10."> <strong class="ng-binding">$heatmap_10.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Hallucinating Humans" href="#/query?type=Hallucinating Humans"> <span class="label label-primary ng-binding">Hallucinating Humans</span> </a> <a href="http://pr.cs.cornell.edu/hallucinatinghumans/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/hallucinatinghumans/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 148 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 16 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-6" ng-href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The position of a #Standing_human while using a #phone is distributed as #$heatmap_10.')" href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54ee95325e5d6411eda224ff" class="panel panel-default feed-2">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=Ceiling" ng-switch-when="#" class="ng-scope" href="#/query?hashword=Ceiling"> <strong class="ng-binding">Ceiling</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> object </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> appears </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> on </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$croppedphoto." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$croppedphoto."> <strong class="ng-binding">$croppedphoto.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=" href="#/query?type="> <span class="label label-primary ng-binding"></span> </a> <a href="opensurfaces.cs.cornell.edu"><span class="label label-primary ng-binding">opensurfaces.cs.cornell.edu</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 11 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 88 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-7" ng-href="static/comments.html?id=The #Ceiling object appears on the #$croppedphoto." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The #Ceiling object appears on the #$croppedphoto.')" href="static/comments.html?id=The #Ceiling object appears on the #$croppedphoto."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="541ff7da42499173e48c6675" class="panel panel-default feed-3">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sentence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=take_some_coffee_in_a_cup" ng-switch-when="#" class="ng-scope" href="#/query?hashword=take_some_coffee_in_a_cup"> <strong class="ng-binding">take_some_coffee_in_a_cup</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> grounded </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> action </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sequence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> shown </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> this </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$video" ng-switch-when="#" class="ng-scope" href="#/query?hashword=$video"> <strong class="ng-binding">$video</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --><div ng-switch-when="webm" class="col-xs-12 ng-scope"> <video class="video" controls="" preload="metadata"> <source class="feed-media" ng-src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/take_some_coffee_in_a_cup/video/feed_special_1.webm" type="video/webm" src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/take_some_coffee_in_a_cup/video/feed_special_1.webm"> Your browser does not support the video tag. Please upgrade to an HTML5-compatible browser. </video> </div> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Tell Me Dave" href="#/query?type=Tell Me Dave"> <span class="label label-primary ng-binding">Tell Me Dave</span> </a> <a href="http://tellmedave.cs.cornell.edu"><span class="label label-primary ng-binding">http://tellmedave.cs.cornell.edu</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 73 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 20 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-8" ng-href="static/comments.html?id=The sentence #take_some_coffee_in_a_cup is grounded in the action sequence shown in this #$video" class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The sentence #take_some_coffee_in_a_cup is grounded in the action sequence shown in this #$video')" href="static/comments.html?id=The sentence #take_some_coffee_in_a_cup is grounded in the action sequence shown in this #$video"></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="546e8e22424991404c59b392" class="panel panel-default feed-4">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=rollingpin" ng-switch-when="#" class="ng-scope" href="#/query?hashword=rollingpin"> <strong class="ng-binding">rollingpin</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> type </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> of </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cookingutensil." ng-switch-when="#" class="ng-scope" href="#/query?hashword=cookingutensil."> <strong class="ng-binding">cookingutensil.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=OpenCyc" href="#/query?type=OpenCyc"> <span class="label label-primary ng-binding">OpenCyc</span> </a> <a href="http://sw.opencyc.org"><span class="label label-primary ng-binding">http://sw.opencyc.org</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 116 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 9 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-9" ng-href="static/comments.html?id=#rollingpin is a type of #cookingutensil." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#rollingpin is a type of #cookingutensil.')" href="static/comments.html?id=#rollingpin is a type of #cookingutensil."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54ee95335e5d6411eda22501" class="panel panel-default feed-1">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> object </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> appears </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> on </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$croppedphoto" ng-switch-when="#" class="ng-scope" href="#/query?hashword=$croppedphoto"> <strong class="ng-binding">$croppedphoto</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> and </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> has </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=Fabric_or_cloth" ng-switch-when="#" class="ng-scope" href="#/query?hashword=Fabric_or_cloth"> <strong class="ng-binding">Fabric_or_cloth</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> material. </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=" href="#/query?type="> <span class="label label-primary ng-binding"></span> </a> <a href="opensurfaces.cs.cornell.edu"><span class="label label-primary ng-binding">opensurfaces.cs.cornell.edu</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 2 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 24 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-11" ng-href="static/comments.html?id=The object appears on the #$croppedphoto and has #Fabric_or_cloth material." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The object appears on the #$croppedphoto and has #Fabric_or_cloth material.')" href="static/comments.html?id=The object appears on the #$croppedphoto and has #Fabric_or_cloth material."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="541ff7db42499173ddd8302f" class="panel panel-default feed-2">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sentence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=pouring_tea_into_a_cup" ng-switch-when="#" class="ng-scope" href="#/query?hashword=pouring_tea_into_a_cup"> <strong class="ng-binding">pouring_tea_into_a_cup</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> grounded </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> action </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sequence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> shown </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> this </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$video" ng-switch-when="#" class="ng-scope" href="#/query?hashword=$video"> <strong class="ng-binding">$video</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --><div ng-switch-when="webm" class="col-xs-12 ng-scope"> <video class="video" controls="" preload="metadata"> <source class="feed-media" ng-src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/pouring_tea_into_a_cup/video/feed_special_3.webm" type="video/webm" src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/pouring_tea_into_a_cup/video/feed_special_3.webm"> Your browser does not support the video tag. Please upgrade to an HTML5-compatible browser. </video> </div> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Tell Me Dave" href="#/query?type=Tell Me Dave"> <span class="label label-primary ng-binding">Tell Me Dave</span> </a> <a href="http://tellmedave.cs.cornell.edu"><span class="label label-primary ng-binding">http://tellmedave.cs.cornell.edu</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 53 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 6 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-12" ng-href="static/comments.html?id=The sentence #pouring_tea_into_a_cup is grounded in the action sequence shown in this #$video" class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The sentence #pouring_tea_into_a_cup is grounded in the action sequence shown in this #$video')" href="static/comments.html?id=The sentence #pouring_tea_into_a_cup is grounded in the action sequence shown in this #$video"></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="5420ce1242499173dc1e6312" class="panel panel-default feed-4">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=standing_human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=standing_human"> <strong class="ng-binding">standing_human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> can </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cut" ng-switch-when="#" class="ng-scope" href="#/query?hashword=cut"> <strong class="ng-binding">cut</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> using </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=knife" ng-switch-when="#" class="ng-scope" href="#/query?hashword=knife"> <strong class="ng-binding">knife</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> as </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> shown </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$heatmap_2." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$heatmap_2."> <strong class="ng-binding">$heatmap_2.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/standing_human/cut/knife/heatmap_2/cutting_frame_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/standing_human/cut/knife/heatmap_2/cutting_frame_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/standing_human/cut/knife/heatmap_2/cutting_result_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/hemakoppula/png/standing_human/cut/knife/heatmap_2/cutting_result_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Anticipation" href="#/query?type=Anticipation"> <span class="label label-primary ng-binding">Anticipation</span> </a> <a href="http://pr.cs.cornell.edu/anticipation/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/anticipation/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 236 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 3 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-14" ng-href="static/comments.html?id=The #standing_human can #cut using a #knife as shown in #$heatmap_2." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The #standing_human can #cut using a #knife as shown in #$heatmap_2.')" href="static/comments.html?id=The #standing_human can #cut using a #knife as shown in #$heatmap_2."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54249320424991193c07d33f" class="panel panel-default feed-0">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=cup" ng-switch-when="#" class="ng-scope" href="#/query?hashword=cup"> <strong class="ng-binding">cup</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> has </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=handle" ng-switch-when="#" class="ng-scope" href="#/query?hashword=handle"> <strong class="ng-binding">handle</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> which </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> can </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=held" ng-switch-when="#" class="ng-scope" href="#/query?hashword=held"> <strong class="ng-binding">held</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> using </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=hands" ng-switch-when="#" class="ng-scope" href="#/query?hashword=hands"> <strong class="ng-binding">hands</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> . </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=POC1" href="#/query?type=POC1"> <span class="label label-primary ng-binding">POC1</span> </a> <a href="http://robobrain.me"><span class="label label-primary ng-binding">http://robobrain.me</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 158 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 3 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-15" ng-href="static/comments.html?id=#cup has #handle which can #held using #hands ." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#cup has #handle which can #held using #hands .')" href="static/comments.html?id=#cup has #handle which can #held using #hands ."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="54212a1d42499126f2431d26" class="panel panel-default feed-1">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=floor" ng-switch-when="#" class="ng-scope" href="#/query?hashword=floor"> <strong class="ng-binding">floor</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> has </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> following </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> appearance </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$image." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$image."> <strong class="ng-binding">$image.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/30b_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/30b_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/31b_thumb.png" src="http://d1rygkc2z32bg1.cloudfront.net/userName/png/floor/image/31b_thumb.png"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Hierarchical Semantic Labeling" href="#/query?type=Hierarchical Semantic Labeling"> <span class="label label-primary ng-binding">Hierarchical Semantic Labeling</span> </a> <a href="http://pr.cs.cornell.edu/sceneunderstanding/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/sceneunderstanding/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 160 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 4 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-16" ng-href="static/comments.html?id=#floor has the following appearance in the #$image." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, '#floor has the following appearance in the #$image.')" href="static/comments.html?id=#floor has the following appearance in the #$image."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="547f8e9fd4129c47d72fd9b7" class="panel panel-default feed-2">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> position </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> of </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=Standing_human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=Standing_human"> <strong class="ng-binding">Standing_human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> while </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> using </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=phone" ng-switch-when="#" class="ng-scope" href="#/query?hashword=phone"> <strong class="ng-binding">phone</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> distributed </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> as </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$heatmap_10." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$heatmap_10."> <strong class="ng-binding">$heatmap_10.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Hallucinating Humans" href="#/query?type=Hallucinating Humans"> <span class="label label-primary ng-binding">Hallucinating Humans</span> </a> <a href="http://pr.cs.cornell.edu/hallucinatinghumans/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/hallucinatinghumans/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 39 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 7 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-17" ng-href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The position of a #Standing_human while using a #phone is distributed as #$heatmap_10.')" href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="541ff7dc42499173ddd83031" class="panel panel-default feed-3">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sentence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=stirring_the_tea" ng-switch-when="#" class="ng-scope" href="#/query?hashword=stirring_the_tea"> <strong class="ng-binding">stirring_the_tea</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> grounded </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> the </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> action </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> sequence </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> shown </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> in </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> this </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$video" ng-switch-when="#" class="ng-scope" href="#/query?hashword=$video"> <strong class="ng-binding">$video</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --><div ng-switch-when="webm" class="col-xs-12 ng-scope"> <video class="video" controls="" preload="metadata"> <source class="feed-media" ng-src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/stirring_the_tea/video/feed_special_5.webm" type="video/webm" src="http://d1rygkc2z32bg1.cloudfront.net/dipendra misra/webm/stirring_the_tea/video/feed_special_5.webm"> Your browser does not support the video tag. Please upgrade to an HTML5-compatible browser. </video> </div> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Tell Me Dave" href="#/query?type=Tell Me Dave"> <span class="label label-primary ng-binding">Tell Me Dave</span> </a> <a href="http://tellmedave.cs.cornell.edu"><span class="label label-primary ng-binding">http://tellmedave.cs.cornell.edu</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 26 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 2 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-18" ng-href="static/comments.html?id=The sentence #stirring_the_tea is grounded in the action sequence shown in this #$video" class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The sentence #stirring_the_tea is grounded in the action sequence shown in this #$video')" href="static/comments.html?id=The sentence #stirring_the_tea is grounded in the action sequence shown in this #$video"></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+                <li ng-repeat="f in feeds track by $index" class="ng-scope">
+                    <div id="544aafa5424991339bf7d556" class="panel panel-default feed-4">
+                        <div class="panel-body">
+                            <br>
+                            <p class="lead">
+                                <!-- ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> The </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> position </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> of </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=Standing_human" ng-switch-when="#" class="ng-scope" href="#/query?hashword=Standing_human"> <strong class="ng-binding">Standing_human</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> while </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> using </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> a </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=phone" ng-switch-when="#" class="ng-scope" href="#/query?hashword=phone"> <strong class="ng-binding">phone</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> is </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> distributed </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --> <!-- ngSwitchDefault:  --><span ng-switch-default="" class="ng-scope ng-binding"> as </span> </span>
+                                </span>
+                                <!-- end ngRepeat: s in f.text track by $index --><span ng-repeat="s in f.text track by $index" class="ng-scope"> <span ng-switch="s.charAt(0)"> <!-- ngSwitchWhen: # --><a ng-href="#/query?hashword=$heatmap_10." ng-switch-when="#" class="ng-scope" href="#/query?hashword=$heatmap_10."> <strong class="ng-binding">$heatmap_10.</strong> </a> <!-- ngSwitchDefault:  --> </span> </span>
+                                <!-- end ngRepeat: s in f.text track by $index -->
+                            </p>
+                            <div class="row text-center">
+                                <!-- ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone__thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media --><span ng-repeat="m in f.media" class="ng-scope"> <span ng-switch="m.type"> <!-- ngSwitchWhen: image --><div ng-switch-when="image" class="col-sm-6 col-xs-12 ng-scope"> <img class="feed-media feed-image" ng-src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg" src="http://d1rygkc2z32bg1.cloudfront.net/ozanSener/jpg/Standing_human/phone/heatmap_10/phone_10_5.jpg_cr_thumb.jpg"> </div> <!-- ngSwitchWhen: html --> <!-- ngSwitchWhen: mp4 --> <!-- ngSwitchWhen: webm --> </span> </span>
+                                <!-- end ngRepeat: m in f.media -->
+                            </div>
+                            <br>
+                            <div class="label-full">
+                                <a class="label-link" ng-href="#/query?type=Hallucinating Humans" href="#/query?type=Hallucinating Humans"> <span class="label label-primary ng-binding">Hallucinating Humans</span> </a> <a href="http://pr.cs.cornell.edu/hallucinatinghumans/"><span class="label label-primary ng-binding">http://pr.cs.cornell.edu/hallucinatinghumans/</span></a> </div>
+                            <div class="social-buttons"> <span class="social-button upvote-region"> <a class="upvote" ng-class="{on: f.upvoted==true}" ng-click="vote(f._id, 1)"> <b class="social-button-text ng-binding"> 12 </b> <i class="fa fa-thumbs-up fa-2x"></i> </a> </span> <span class="social-button downvote-region"> <a class="downvote" ng-class="{on: f.downvoted==true}" ng-click="vote(f._id, -1)"> <b class="social-button-text ng-binding"> 4 </b> <i class="fa fa-thumbs-down fa-2x"></i> </a> </span> <span class="social-button"> <a class="comments"> <b class="social-button-text"> </b> <i id="comment-19" ng-href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10." class="feed-comments fa fa-comments fa-2x" ng-click="loadComments(f._id, 'The position of a #Standing_human while using a #phone is distributed as #$heatmap_10.')" href="static/comments.html?id=The position of a #Standing_human while using a #phone is distributed as #$heatmap_10."></i> </a> </span> </div>
+                        </div>
+                    </div>
+                    <br> </li>
+                <!-- end ngRepeat: f in feeds track by $index -->
+            </ul>
+            <br class="ng-scope">
+        </div>
+        <div class="footer">
+            <p>© Cornell University 2015</p>
+        </div>
+    </div>
+    <div class="navbar-fixed-bottom">
+        <div class="container-fluid">
+            <a href="http://weaver.systems/" target="_blank" class="navbar-btn btn-default btn pull-right">&nbsp; Powered By Weaver</a>
+        </div>
+    </div>
+    <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.js"></script>
+    <![endif]-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/lib/angular-file-upload.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <div>
+        <div class="sweet-overlay" tabindex="-1"></div>
+        <div class="sweet-alert" tabindex="-1">
+            <div class="icon error"><span class="x-mark"><span class="line left"></span><span class="line right"></span></span>
+            </div>
+            <div class="icon warning"> <span class="body"></span> <span class="dot"></span> </div>
+            <div class="icon info"></div>
+            <div class="icon success"> <span class="line tip"></span> <span class="line long"></span>
+                <div class="placeholder"></div>
+                <div class="fix"></div>
+            </div>
+            <div class="icon custom"></div>
+        </div>
+    </div>
+    <input style="position: absolute; top: -10000px;">
+</body>
+
+</html>

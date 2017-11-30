@@ -1,0 +1,447 @@
+<html class="no-js">
+
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide {
+            display: none !important;
+        }
+        
+        ng\:form {
+            display: block;
+        }
+        
+        .ng-animate-block-transitions {
+            transition: 0s all!important;
+            -webkit-transition: 0s all!important;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Robo Brain</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="arpit, agarwal, ashutosh, saxena, aditya, jami, ashesh, jain, ozan, sener, dipendra, misra, planit, tell me dave, plan it, tellmedave, robots, 3d images, cornell, stanford, machine learning, artificial intelligence, hema, koppula, large scale systems, large scale, knowledge base, knowledge engine,knowledge vault, grasping, robot grasping, dishwasher unloading, make3d, assistive, personal, robots, point cloud, humanoid, kinect, rgbd, robot manipulation, computer vision, robotics, robot learning, research, computer, cs, learning, vision, ai, perception, videos">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/lib/sweet-alert.css"> </head>
+
+<body ng-app="roboBrainApp" class="ng-scope">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container ng-scope" ng-controller="LoginCtrl">
+        <div class="navbar navbar-default no-border" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" ng-href="#/" href="#/"> <img class="brand-logo" src="images/logo.svg"> <span class="brand-text">Robo Brain</span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right" id="menu">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a ng-href="#/graph">Graph</a></li> -->
+                    <!-- <li><a ng-href="#/search">Search</a></li> -->
+                    <!-- <li><a ng-href="#/research">Research</a></li> -->
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="">Graph</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ngView:  -->
+        <div ng-view="" class="ng-scope">
+            <div class="container ng-scope">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                            <span id="research_rb_span", class="pull-right clickableParent" onclick="close_rb('#research_rb','#research_rb_span')"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                            <h3 class="panel-title">Research</h3> </div>
+                            <div class="panel-body collapseParent" id="research_rb"> Robo Brain is a large-scale computational system that learns from publicly available Internet resources, computer simulations, and real-life robot trials. It accumulates everything robotics into a comprehensive and interconnected knowledge base. Applications include prototyping for robotics research, household robots, and self-driving cars.
+                                <br>
+                                <br> In our multi-university open-source effort on building the Robo Brain, we are addressing research challenges in various domains:
+                                <br>
+                                <br>
+                                <!-- <div class="row"> -->
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="ml_rb_span" onclick="close_rb('#ml_rb','#ml_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Machine Learning</h3> </div>
+                                        <div id="ml_rb" class="panel-body collapse collapseChild">
+                                            <p> The key in building our RoboBrain is to be able to learn from a variety of multi-modal data and from many types of learning signals. Some examples are: </p>
+                                            <ul>
+                                                <li> <em>Deep Learning</em>: The large amounts of unlabeled data such as text, images, 3D models allow us to use unsupervised deep learning for learning good representations. </li>
+                                                <li> <em>Structured Learning and Discovering Latent Factors</em>: There is a significant structure in the variety of data we have. Using techniques such as graphical models and nonparametric learning allows to model the relations such as spatial and semantic relations between objects. </li>
+                                                <li> <em>Interactive Online Learning</em>: This gives us an opportunity to develop new theoretically-sound online learning algorithms that use the streaming data with weak labeling. </li>
+                                            </ul>
+                                            <p></p>
+                                            <br> </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="lsdp_rb_span" onclick="close_rb('#lsdp_rb','#lsdp_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Large-Scale Data Processing</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="lsdp_rb">
+                                            <p> A robot has to learn from multi-modal data sources such as videos, images, language and even physical interaction with humans. This necessitates building a large-scale knowledge graph that allows efficient data storage, probabilistic queries and retrieval. Another challenge is the variety of learning algorithms the system should support, from large-scale offline learning to real-time online learning. </p>
+                                            <p> This multi-modality of data and the large probabilistic query space makes this problem more challenging than existing large-scale systems that typically store single type of data source such as images, or textual data. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="lang_rb_span" onclick="close_rb('#lang_rb','#lang_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Language and Dialog</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="lang_rb">
+                                            <p> For seamless human-robot collaboration robots should be able to interact with humans using natural language. Robots should not only parse the language, but also ground its meaning into suitable actions based on the context and the environment. </p>
+                                            <p> This require building learning algorithms that can model the ambiguity in language, the uncertainty in the robotic actions, and the implicit representation of the task and the environment. This will require exploring new ways for collecting natural language data from humans, and designing algorithms for mapping the language to robot actions obeying environment constraints (the laws of physics). </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="perc_rb_span" onclick="close_rb('#perc_rb','#perc_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Perception</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="perc_rb">
+                                            <p> In order to act in the environment, a robot should be able understand its surrounding objects, furniture layout, humans, road-signs, etc. This requires building data-driven vision algorithms that run in real-time. </p>
+                                            <p> The challenges encountered here are far richer than traditional computer vision because: </p>
+                                            <ul>
+                                                <li> The perception is for <em>action</em>, in that the agent constantly interacts with the environment and modifies it. </li>
+                                                <li> Agent can use a variety of perception signals such as 2D images, videos, as well as 3D point-cloud data from RGBD and LIDAR sensors. </li>
+                                            </ul>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="ai_rb_span" onclick="close_rb('#ai_rb','#ai_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">AI and Reasoning Systems</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="ai_rb">
+                                            <p> Robots need to reason about the constraints and behavior of the agents in the real world. We are developing methods that model other human's intentions, methods that learn constraints by observing events in the environments. Unlike other traditional rule-based systems, the challenge here is to learn and probabilistically integrate such knowledge into our Robo Brain. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="emb_rb_span" onclick="close_rb('#emb_rb','#emb_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Embodiment</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="emb_rb">
+                                            <p> We are using our Robo Brain in various robots such as Baxter, PR2, and several others. Since every robot is physically different and operates in a variety of environments, we need to build methods that allow our Robo Brain to be embodied in different robots and for different tasks. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="panel">
+                                        <div class=""> <span class="pull-right clickableChild panel-collapsed" id="robo_rb_span" onclick="close_rb('#robo_rb','#robo_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                            <h3 class="panel-title">Robotics</h3> </div>
+                                        <div class="panel-body collapse collapseChild" id="robo_rb">
+                                            <h5><a ng-href="http://goldberg.berkeley.edu/cloud-robotics/" target="_blank" href="http://goldberg.berkeley.edu/cloud-robotics/"> Robotics and Automation</a> </h5>
+                                            <br>
+                                            <p> Cloud Robotics has potential to improve performance in at least five ways: </p>
+                                            <ul>
+                                                <li> Big Data: indexing a global library of images, maps, and object data </li>
+                                                <li> Cloud Computing: parallel grid computing on demand for statistical analysis, learning, and motion planning </li>
+                                                <li> Open-Source / Open-Access: humans sharing code, data, algorithms, and hardware designs </li>
+                                                <li> Collective Robot Learning: robots sharing trajectories, control policies, and outcomes </li>
+                                                <li> Crowdsourcing and call centers: offline and on-demand human guidance for evaluation, learning, and error recovery. </li>
+                                            </ul>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> <span class="pull-right clickableParent" id="talk_rb_span" onclick="close_rb('#talk_rb','#talk_rb_span')"><i class="glyphicon glyphicon-chevron-up"></i></span>
+                                <h3 class="panel-title">Talk</h3> </div>
+                            <div class="panel-body collapseParent collapse" id="talk_rb" style="display: block;">
+                                <h3>Talk at RSS '14</h3>
+                                <br>
+                                <div class="video-container">
+                                    <iframe src="https://www.youtube.com/embed/D_EvBEtVodY" frameborder="0" allowfullscreen=""></iframe>
+                                </div>
+                                <br>
+                                <br>
+                                <h3>Other talks</h3>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=5HmPv6CwGtY"> <strong>12-Minute Talk on Robo Brain</strong> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> <span class="pull-right clickableParent panel-collapsed" id="pub_rb_span" onclick="close_rb('#pub_rb','#pub_rb_span')"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                <h3 class="panel-title">Publications</h3> </div>
+                            <div class="panel-body collapseParent collapse" style="display: none;" id="pub_rb">
+                                <!-- <h4 id="publications"></h4> -->
+                                <br>
+                                <ul class="list-unstyled">
+                                    <!-- ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://arxiv.org/abs/1412.0691" target="_blank" class="ng-binding" href="http://arxiv.org/abs/1412.0691">Robo Brain: Large-Scale Knowledge Engine for Robots</a> </strong>
+                                        <br> Ashutosh Saxena, Ashesh Jain, Ozan Sener, Aditya Jami, Dipendra K Misra and Hema S Koppula
+                                        <br> <em class="ng-binding">Tech Report arxiv</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://pr.cs.cornell.edu/deepgrasping/" target="_blank" class="ng-binding" href="http://pr.cs.cornell.edu/deepgrasping/">Deep Learning for Detecting Robotic Grasps</a> </strong>
+                                        <br> Ian Lenz, Honglak Lee, Ashutosh Saxena
+                                        <br> <em class="ng-binding">International Journal on Robotics Research (IJRR)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">An earlier version was presented in Robotics Science and Systems (RSS), 2013.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://tellmedave.cs.cornell.edu/paper.pdf" target="_blank" class="ng-binding" href="http://tellmedave.cs.cornell.edu/paper.pdf">Tell Me Dave: Context-Sensitive Grounding of Natural Language to Mobile Manipulation Instructions</a> </strong>
+                                        <br> Dipendra K. Misra, Jaeyong Sung, Kevin Lee, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Robotics: Science and Systems (RSS)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/wulenzsaxena_hierarchicallabel-rgbd_rss2014.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/wulenzsaxena_hierarchicallabel-rgbd_rss2014.pdf">Hierarchical Semantic Labeling for Task-Relevant RGB-D Perception</a> </strong>
+                                        <br> Chenxia Wu, Ian Lenz, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Robotics: Science and Systems (RSS)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss14_gplcrf.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss14_gplcrf.pdf">Modeling High-Dimensional Humans for Activity Anticipation using Gaussian Process Latent CRFs</a> </strong>
+                                        <br> Yun Jiang, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Robotics: Science and Systems (RSS)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/koppula-saxena-eccv14-physicallygroundedaffordances.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/koppula-saxena-eccv14-physicallygroundedaffordances.pdf">Physically-Grounded Spatio-Temporal Object Affordances</a> </strong>
+                                        <br> Hema S. Koppula, Ashutosh Saxena
+                                        <br> <em class="ng-binding">European Conference on Computer Vision (ECCV)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/koppula_jain_saxena_iser14_anticipatoryplanning.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/koppula_jain_saxena_iser14_anticipatoryplanning.pdf">Anticipatory Planning for Human-Robot Teams</a> </strong>
+                                        <br> Hema S. Koppula, Ashesh Jain, Ashutosh Saxena
+                                        <br> <em class="ng-binding">14th International Symposium on Experimental Robotics (ISER)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/3d_based_reasoning_saxena_pami14.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/3d_based_reasoning_saxena_pami14.pdf">3D Reasoning from Blocks to Stability</a> </strong>
+                                        <br> Zhaoyin Jia, Andy Gallagher, Ashutosh Saxena, Tsuhan Chen
+                                        <br> <em class="ng-binding">IEEE Transactions on Pattern Analysis and Machine Intelligence (PAMI)</em>, 2014
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">Original version appeared as an oral in CVPR 2013.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/jain_saxena_trajectorypreferencelearning_nips13.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/jain_saxena_trajectorypreferencelearning_nips13.pdf">Learning Trajectory Preferences for Manipulators via Iterative Improvement</a> </strong>
+                                        <br> Ashesh Jain, Brian Wojcik, Thorsten Joachims, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Neural Information Processing Systems (NIPS)</em>, 2013
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">An earlier version of this work was presented at the ICML workshop on Robot Learning, June 2013.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/anticipation_RSS_2013.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/anticipation_RSS_2013.pdf">Anticipating Human Activities using Object Affordances for Reactive Robotic Response</a> </strong>
+                                        <br> Hema S. Koppula, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Robotics: Science and Systems (RSS)</em>, 2013
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <div ng-if="p.awards" class="ng-scope"> <strong class="ng-binding">Best Student Paper Award, Best Paper Runner-Up</strong> </div>
+                                        <!-- end ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss13_ILCRF.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss13_ILCRF.pdf">Infinite Latent Conditional Random Fields for Modeling Environments through Humans</a> </strong>
+                                        <br> Yun Jiang, Ashutosh Saxena
+                                        <br> <em class="ng-binding">Robotics: Science and Systems (RSS)</em>, 2013
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss13_ILCRF.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/jiang_saxena_rss13_ILCRF.pdf">Learning Object Arrangements in 3D Scenes using Human Context</a> </strong>
+                                        <br> Yun Jiang, Marcus Lim, Ashutosh Saxena
+                                        <br> <em class="ng-binding">International Conference of Machine Learning (ICML)</em>, 2012
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/papers/contextuallabeling3d_saxena_ijrr12.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/papers/contextuallabeling3d_saxena_ijrr12.pdf">Contextual Guided Semantic Labeling and Search for 3D Point Clouds</a> </strong>
+                                        <br> Abhishek Anand, Hema S. Koppula, Thorsten Joachims, Ashutosh Saxena
+                                        <br> <em class="ng-binding">International Journal of Robotics Research (IJRR)</em>, 2012
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">Original version in NIPS 2011.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://www.cs.cornell.edu/~asaxena/openingnewdoors/klingbeil-saxena-ng-opennewdoors.pdf" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/openingnewdoors/klingbeil-saxena-ng-opennewdoors.pdf">Learning to Open New Doors</a> </strong>
+                                        <br> Ellen Klingbeil, Ashutosh Saxena, Andrew Y. Ng
+                                        <br> <em class="ng-binding">International Conference on Intelligent Robots and Systems (IROS)</em>, 2010
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">First published in Robotics Science and Systems (RSS) workshop on Robot Manipulation, 2008.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                    <li ng-repeat="p in publications" class="ng-scope ng-binding"> <strong> <a ng-href="http://pr.cs.cornell.edu/grasping/IJRR_saxena_etal_roboticgraspingofnovelobjects.pdf" target="_blank" class="ng-binding" href="http://pr.cs.cornell.edu/grasping/IJRR_saxena_etal_roboticgraspingofnovelobjects.pdf">Robotic Grasping of Novel Objects using Vision</a> </strong>
+                                        <br> Ashutosh Saxena, Justin Driemeyer, Andrew Y. Ng
+                                        <br> <em class="ng-binding">International Journal of Robotics Research (IJRR)</em>, vol. 27, no. 2, pp. 157-173, Feb. 2008
+                                        <br>
+                                        <!-- ngIf: p.awards -->
+                                        <!-- ngIf: p.misc -->
+                                        <div ng-if="p.misc" class="ng-scope"> <em><small class="ng-binding">Original version appeared in Neural Information Processing Systems (NIPS), 2006.</small></em> </div>
+                                        <!-- end ngIf: p.misc -->
+                                        <br> </li>
+                                    <!-- end ngRepeat: p in publications -->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <h3>In The Press</h3>
+                    <!-- ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.nytimes.com/2014/09/02/science/robot-touch.html" target="_blank" href="http://www.nytimes.com/2014/09/02/science/robot-touch.html"> <img class="news-logo" ng-src="images/news/nyt.jpg" src="images/news/nyt.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://techcrunch.com/2014/08/25/the-robo-brain-will-use-the-internet-to-teach-robots/" target="_blank" href="http://techcrunch.com/2014/08/25/the-robo-brain-will-use-the-internet-to-teach-robots/"> <img class="news-logo" ng-src="images/news/tc.jpg" src="images/news/tc.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="https://www.yahoo.com/tech/cornell-scientists-create-robo-brain-to-teach-robots-95740298304.html" target="_blank" href="https://www.yahoo.com/tech/cornell-scientists-create-robo-brain-to-teach-robots-95740298304.html"> <img class="news-logo" ng-src="images/news/yahoo.jpg" src="images/news/yahoo.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://abcnews.go.com/Technology/robots-learn-teach/story?id=25196591" target="_blank" href="http://abcnews.go.com/Technology/robots-learn-teach/story?id=25196591"> <img class="news-logo" ng-src="images/news/abc.jpg" src="images/news/abc.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.kurzweilai.net/robo-brain-will-teach-robots-everything-from-the-internet" target="_blank" href="http://www.kurzweilai.net/robo-brain-will-teach-robots-everything-from-the-internet"> <img class="news-logo" ng-src="images/news/kurzweil.jpg" src="images/news/kurzweil.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.wired.com/2014/08/robobrain/" target="_blank" href="http://www.wired.com/2014/08/robobrain/"> <img class="news-logo" ng-src="images/news/wired.jpg" src="images/news/wired.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.cnet.com/news/robo-brain-is-learning-from-the-internet/" target="_blank" href="http://www.cnet.com/news/robo-brain-is-learning-from-the-internet/"> <img class="news-logo" ng-src="images/news/cnet.jpg" src="images/news/cnet.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.cbsnews.com/news/robo-brain-to-teach-robots-about-the-human-world/" target="_blank" href="http://www.cbsnews.com/news/robo-brain-to-teach-robots-about-the-human-world/"> <img class="news-logo" ng-src="images/news/cbs.jpg" src="images/news/cbs.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.washingtonpost.com/news/speaking-of-science/wp/2014/08/25/this-robot-is-using-youtube-videos-to-learn-all-about-us/" target="_blank" href="http://www.washingtonpost.com/news/speaking-of-science/wp/2014/08/25/this-robot-is-using-youtube-videos-to-learn-all-about-us/"> <img class="news-logo" ng-src="images/news/wpost.jpg" src="images/news/wpost.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.bbc.com/news/technology-28936436" target="_blank" href="http://www.bbc.com/news/technology-28936436"> <img class="news-logo" ng-src="images/news/bbc.jpg" src="images/news/bbc.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://news.sky.com/story/1325005/robo-brain-lets-robots-learn-from-the-internet" target="_blank" href="http://news.sky.com/story/1325005/robo-brain-lets-robots-learn-from-the-internet"> <img class="news-logo" ng-src="images/news/sky.jpg" src="images/news/sky.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.dailymail.co.uk/sciencetech/article-2734123/The-robot-brain-rule-Plans-giant-central-brain-power-millions-machines-world-revealed.html" target="_blank" href="http://www.dailymail.co.uk/sciencetech/article-2734123/The-robot-brain-rule-Plans-giant-central-brain-power-millions-machines-world-revealed.html"> <img class="news-logo" ng-src="images/news/dmail.jpg" src="images/news/dmail.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://www.popsci.com/blog-network/zero-moment/robo-brain-project-wants-turn-internet-robotic-hivemind" target="_blank" href="http://www.popsci.com/blog-network/zero-moment/robo-brain-project-wants-turn-internet-robotic-hivemind"> <img class="news-logo" ng-src="images/news/psci.jpg" src="images/news/psci.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news --><span ng-repeat="n in news" class="ng-scope"> <a ng-href="http://blogs.voanews.com/science-world/2014/08/25/12571/" target="_blank" href="http://blogs.voanews.com/science-world/2014/08/25/12571/"> <img class="news-logo" ng-src="images/news/voa.jpg" src="images/news/voa.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in news -->
+                    <h3>Sponsors</h3>
+                    <!-- ngRepeat: n in sponsors_gov --><span ng-repeat="n in sponsors_gov" class="ng-scope"> <a ng-href="http://www.nsf.gov/" target="_blank" href="http://www.nsf.gov/"> <img class="news-logo" ng-src="images/sponsors/nsf.jpg" style="height:100px" src="images/sponsors/nsf.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_gov --><span ng-repeat="n in sponsors_gov" class="ng-scope"> <a ng-href="http://www.onr.navy.mil/" target="_blank" href="http://www.onr.navy.mil/"> <img class="news-logo" ng-src="images/sponsors/onr.jpg" style="height:100px" src="images/sponsors/onr.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_gov --><span ng-repeat="n in sponsors_gov" class="ng-scope"> <a ng-href="http://www.arl.army.mil/" target="_blank" href="http://www.arl.army.mil/"> <img class="news-logo" ng-src="images/sponsors/aro.jpg" style="height:100px" src="images/sponsors/aro.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_gov --><span ng-repeat="n in sponsors_gov" class="ng-scope"> <a ng-href="http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=503641&amp;org=CISE" target="_blank" href="http://www.nsf.gov/funding/pgm_summ.jsp?pims_id=503641&amp;org=CISE"> <img class="news-logo" ng-src="images/sponsors/nri.jpg" style="height:100px" src="images/sponsors/nri.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_gov -->
+                    <br>
+                    <!-- ngRepeat: n in sponsors_tech --><span ng-repeat="n in sponsors_tech" class="ng-scope"> <a ng-href="http://www.google.com/" target="_blank" href="http://www.google.com/"> <img class="news-logo" ng-src="images/sponsors/goog.jpg" style="height:100px" src="images/sponsors/goog.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_tech --><span ng-repeat="n in sponsors_tech" class="ng-scope"> <a ng-href="http://www.microsoft.com/" target="_blank" href="http://www.microsoft.com/"> <img class="news-logo" ng-src="images/sponsors/msft.jpg" style="height:100px" src="images/sponsors/msft.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_tech --><span ng-repeat="n in sponsors_tech" class="ng-scope"> <a ng-href="http://www.qualcomm.com/" target="_blank" href="http://www.qualcomm.com/"> <img class="news-logo" ng-src="images/sponsors/qcom.jpg" style="height:100px" src="images/sponsors/qcom.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_tech -->
+                    <br>
+                    <!-- ngRepeat: n in sponsors_misc --><span ng-repeat="n in sponsors_misc" class="ng-scope"> <a ng-href="http://www.sloan.org/" target="_blank" href="http://www.sloan.org/"> <img class="news-logo" ng-src="images/sponsors/apsf.jpg" style="height:100px" src="images/sponsors/apsf.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_misc -->
+                    <br>
+                    <!-- ngRepeat: n in sponsors_school --><span ng-repeat="n in sponsors_school" class="ng-scope"> <a ng-href="http://www.cornell.edu/" target="_blank" href="http://www.cornell.edu/"> <img class="news-logo" ng-src="images/sponsors/cornell.jpg" style="height:100px" src="images/sponsors/cornell.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_school --><span ng-repeat="n in sponsors_school" class="ng-scope"> <a ng-href="http://www.stanford.edu/" target="_blank" href="http://www.stanford.edu/"> <img class="news-logo" ng-src="images/sponsors/stanford.jpg" style="height:100px" src="images/sponsors/stanford.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_school --><span ng-repeat="n in sponsors_school" class="ng-scope"> <a ng-href="http://www.berkeley.edu/" target="_blank" href="http://www.berkeley.edu/"> <img class="news-logo" ng-src="images/sponsors/berkeley.jpg" style="height:100px" src="images/sponsors/berkeley.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_school --><span ng-repeat="n in sponsors_school" class="ng-scope"> <a ng-href="http://www.brown.edu/" target="_blank" href="http://www.brown.edu/"> <img class="news-logo" ng-src="images/sponsors/brown.jpg" style="height:100px" src="images/sponsors/brown.jpg"> </a> </span>
+                    <!-- end ngRepeat: n in sponsors_school -->
+                </div>
+            </div>
+            <style class="ng-scope">
+                . span {
+                    margin-top: -20px;
+                    font-size: 15px;
+                }
+                
+                .row {
+                    margin-top: 40px;
+                    padding: 0 10px;
+                }
+                
+                .clickableChild {
+                    cursor: pointer;
+                }
+                
+                .clickableParent {
+                    cursor: pointer;
+                }
+            </style>
+            <script type="text/javascript">
+            function open_rb(number) {
+                document.getElementById(number).className =
+                document.getElementById(number).className.replace(/\rb_collapsed\b/,'');
+                document.getElementById(number).style.display = "initial";
+            }
+            function close_rb(number,span_id) {
+                if ($(span_id).hasClass('panel-collapsed')){
+                    $(number).slideDown();
+                    $(span_id).removeClass('panel-collapsed');
+                     $(span_id).find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                }else {
+                    $(number).slideUp();
+                    $(span_id).addClass('panel-collapsed');
+                    $(span_id).find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                }
+            }
+            </script>
+ 
+            <!-- Collapsible Panels - END -->
+        </div>
+        <div class="footer">
+            <p>© Cornell University 2015</p>
+        </div>
+    </div>
+    <div class="navbar-fixed-bottom">
+        <div class="container-fluid">
+            <a href="http://weaver.systems/" target="_blank" class="navbar-btn btn-default btn pull-right"> <span class="glyphicon glyphicon-star"></span>&nbsp; Powered By Weaver</a>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53432628-1');
+        ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.js"></script>
+    <![endif]-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/lib/angular-file-upload.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/scripts.js"></script>
+    </div>
+</body>
+
+</html>

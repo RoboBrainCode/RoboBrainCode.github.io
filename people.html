@@ -1,0 +1,230 @@
+<html class="no-js gr__robobrain_me">
+
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide {
+            display: none !important;
+        }
+        
+        ng\:form {
+            display: block;
+        }
+        
+        .ng-animate-block-transitions {
+            transition: 0s all!important;
+            -webkit-transition: 0s all!important;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Robo Brain</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="arpit, agarwal, ashutosh, saxena, aditya, jami, ashesh, jain, ozan, sener, dipendra, misra, planit, tell me dave, plan it, tellmedave, robots, 3d images, cornell, stanford, machine learning, artificial intelligence, hema, koppula, large scale systems, large scale, knowledge base, knowledge engine,knowledge vault, grasping, robot grasping, dishwasher unloading, make3d, assistive, personal, robots, point cloud, humanoid, kinect, rgbd, robot manipulation, computer vision, robotics, robot learning, research, computer, cs, learning, vision, ai, perception, videos">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/lib/sweet-alert.css"> </head>
+
+<body ng-app="roboBrainApp" data-gr-c-s-loaded="true" class="ng-scope" style="">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container ng-scope" ng-controller="LoginCtrl">
+        <div class="navbar navbar-default no-border" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" ng-href="#/" href="#/"> <img class="brand-logo" src="images/logo.svg"> <span class="brand-text">Robo Brain</span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right" id="menu">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a ng-href="#/graph">Graph</a></li> -->
+                    <!-- <li><a ng-href="#/search">Search</a></li> -->
+                    <!-- <li><a ng-href="#/research">Research</a></li> -->
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="">Graph</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ngView:  -->
+        <div ng-view="" class="ng-scope">
+            <br class="ng-scope">
+            <h3 class="ng-scope">Robo Brain Team</h3>
+            <br class="ng-scope">
+            <div class="row ng-scope">
+                <!-- ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/asaxena.jpg" src="images/contrib/asaxena.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~asaxena/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~asaxena/">Prof. Ashutosh Saxena</a> <br> <small class="ng-binding"> Cornell / Stanford<br> <!-- ngIf: p.email --><a ng-if="p.email" ng-href="mailto:asaxena@cs.cornell.edu" target="_blank" class="ng-scope ng-binding" href="mailto:asaxena@cs.cornell.edu"> asaxena@cs.cornell.edu <br> </a><!-- end ngIf: p.email --> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Robot Learning and Project Lead </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/ajain.jpg" src="images/contrib/ajain.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~ashesh/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~ashesh/">Ashesh Jain</a> <br> <small class="ng-binding"> Cornell / Stanford<br> <!-- ngIf: p.email --><a ng-if="p.email" ng-href="mailto:ashesh@cs.cornell.edu" target="_blank" class="ng-scope ng-binding" href="mailto:ashesh@cs.cornell.edu"> ashesh@cs.cornell.edu <br> </a><!-- end ngIf: p.email --> <!-- ngIf: p.roleUrl --><a ng-if="p.roleUrl" ng-href="http://planit.cs.cornell.edu/" target="_blank" class="ng-scope ng-binding" href="http://planit.cs.cornell.edu/"> Interactive Online Learning </a><!-- end ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/osener.jpg" src="images/contrib/osener.jpg">
+                    <h4 class="text-center"> <a ng-href="http://ozansener.net/" target="_blank" class="ng-binding" href="http://ozansener.net/">Ozan Sener</a> <br> <small class="ng-binding"> Cornell / Stanford<br> <!-- ngIf: p.email --> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Vision and Language </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/ajami.jpg" src="images/contrib/ajami.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.stanford.edu/people/adityaj/" target="_blank" class="ng-binding" href="http://www.cs.stanford.edu/people/adityaj/">Aditya Jami</a> <br> <small class="ng-binding"> Cornell / Zoodig<br> <!-- ngIf: p.email --><a ng-if="p.email" ng-href="mailto:adityajami@gmail.com" target="_blank" class="ng-scope ng-binding" href="mailto:adityajami@gmail.com"> adityajami@gmail.com <br> </a><!-- end ngIf: p.email --> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Large-Scale Systems </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/dmisra.jpg" src="images/contrib/dmisra.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~dkm/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~dkm/">Dipendra K. Misra</a> <br> <small class="ng-binding"> Cornell / Stanford<br> <!-- ngIf: p.email --> <!-- ngIf: p.roleUrl --><a ng-if="p.roleUrl" ng-href="http://tellmedave.cs.cornell.edu/" target="_blank" class="ng-scope ng-binding" href="http://tellmedave.cs.cornell.edu/"> Language Grounding </a><!-- end ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in leads"> <img class="contrib-pic img-center" ng-src="images/contrib/hkoppula.jpg" src="images/contrib/hkoppula.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~hema/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~hema/">Hema Koppula</a> <br> <small class="ng-binding"> Cornell Univeristy<br> <!-- ngIf: p.email --> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Machine Learning and 3D Perception </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in leads -->
+            </div>
+            <br class="ng-scope">
+            <h3 class="ng-scope">Masters and Undergraduate Students</h3>
+            <br class="ng-scope">
+            <div class="row ng-scope">
+                <!-- ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/ddas.jpg" src="images/contrib/ddas.jpg">
+                    <h4 class="text-center"> <a ng-href="http://debarghyadas.com/" target="_blank" class="ng-binding" href="http://debarghyadas.com/">Debarghya Das</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Planning and Visualization </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/klee.jpg" src="images/contrib/klee.jpg">
+                    <h4 class="text-center"> <a ng-href="mailto:kkl53@cornell.edu" target="_blank" class="ng-binding" href="mailto:kkl53@cornell.edu">Kevin Lee</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Online Robot Games </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/mmeister.jpg" src="images/contrib/mmeister.jpg">
+                    <h4 class="text-center"> <a ng-href="mailto:mmeister@stanford.edu" target="_blank" class="ng-binding" href="mailto:mmeister@stanford.edu">Michela Meister</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Language Queries </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/hcallen.jpg" src="images/contrib/hcallen.jpg">
+                    <h4 class="text-center"> <a ng-href="mailto:hcaseyal@stanford.edu" target="_blank" class="ng-binding" href="mailto:hcaseyal@stanford.edu">Hope Casey-Allen</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Knowledge Integration </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/arjain.jpg" src="images/contrib/arjain.jpg">
+                    <h4 class="text-center"> <a ng-href="mailto:arzavj@stanford.edu" target="_blank" class="ng-binding" href="mailto:arzavj@stanford.edu">Arzav Jain</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Graph Operations </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <div class="contrib col-sm-4 col-xs-9 ng-scope" ng-repeat="p in ugrad_masters_students"> <img class="contrib-pic img-center" ng-src="images/contrib/gkho.jpg" src="images/contrib/gkho.jpg">
+                    <h4 class="text-center"> <a ng-href="mailto:gabriel.d.kho@gmail.com" target="_blank" class="ng-binding" href="mailto:gabriel.d.kho@gmail.com">Gabriel Kho</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Human-Computer Interaction </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+                <!-- end ngRepeat: p in ugrad_masters_students -->
+            </div>
+            <br class="ng-scope">
+            <h3 class="ng-scope">Faculty</h3>
+            <br class="ng-scope">
+            <div class="row ng-scope">
+                <!-- ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/kgoldberg.jpg" src="images/contrib/kgoldberg.jpg">
+                    <h4 class="text-center"> <a ng-href="http://goldberg.berkeley.edu/" target="_blank" class="ng-binding" href="http://goldberg.berkeley.edu/">Prof. Ken Goldberg</a> <br> <small class="ng-binding"> UC Berkeley<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Cloud Robotics </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/stellex.jpg" src="images/contrib/stellex.jpg">
+                    <h4 class="text-center"> <a ng-href="https://cs.brown.edu/people/stefie10/" target="_blank" class="ng-binding" href="https://cs.brown.edu/people/stefie10/">Prof. Stefanie Tellex</a> <br> <small class="ng-binding"> Brown University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Robot Dialog </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/tjoachims.jpg" src="images/contrib/tjoachims.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/People/tj/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/People/tj/">Prof. Thorsten Joachims</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Machine Learning </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/ssavarese.jpg" src="images/contrib/ssavarese.jpg">
+                    <h4 class="text-center"> <a ng-href="http://cvgl.stanford.edu/silvio/" target="_blank" class="ng-binding" href="http://cvgl.stanford.edu/silvio/">Prof. Silvio Savarese</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> 3D Vision </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/fli.jpg" src="images/contrib/fli.jpg">
+                    <h4 class="text-center"> <a ng-href="http://vision.stanford.edu/feifeili/" target="_blank" class="ng-binding" href="http://vision.stanford.edu/feifeili/">Prof. Fei-Fei Li</a> <br> <small class="ng-binding"> Stanford University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Computer Vision </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/bselman.jpg" src="images/contrib/bselman.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/selman/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/selman/">Prof. Bart Selman</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Reasoning and AI </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/jmalik.jpg" src="images/contrib/jmalik.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.berkeley.edu/~malik/" target="_blank" class="ng-binding" href="http://www.cs.berkeley.edu/~malik/">Prof. Jitendra Malik</a> <br> <small class="ng-binding"> UC Berkeley<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Computer Vision </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in faculty"> <img class="contrib-pic img-center" ng-src="images/contrib/rknepper.jpg" src="images/contrib/rknepper.jpg">
+                    <h4 class="text-center"> <a ng-href="http://people.csail.mit.edu/rak/www/" target="_blank" class="ng-binding" href="http://people.csail.mit.edu/rak/www/">Prof. Ross Knepper</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Structured Planning </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in faculty -->
+            </div>
+            <br class="ng-scope">
+            <h3 class="ng-scope">PhD Students</h3>
+            <br class="ng-scope">
+            <div class="row ng-scope">
+                <!-- ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/yjiang.jpg" src="images/contrib/yjiang.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~yunjiang/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~yunjiang/">Yun Jiang</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Non-Parametric Learning </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/ilenz.jpg" src="images/contrib/ilenz.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~ianlenz/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~ianlenz/">Ian Lenz</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Deep Learning and Manipulation </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/jsung.jpg" src="images/contrib/jsung.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~jysung/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~jysung/">Jaeyong Sung</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Manipulation Planning </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/cwu.jpg" src="images/contrib/cwu.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~chenxiawu/" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~chenxiawu/">Chenxia Wu</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> 3D Vision </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/adubey.jpg" src="images/contrib/adubey.jpg">
+                    <h4 class="text-center"> <a ng-href="http://www.cs.cornell.edu/~dubey" target="_blank" class="ng-binding" href="http://www.cs.cornell.edu/~dubey">Ayush Dubey</a> <br> <small class="ng-binding"> Cornell University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Graph Databases (Weaver) </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+                <div class="contrib col-sm-3 col-xs-9 ng-scope" ng-repeat="p in phd_students"> <img class="contrib-pic img-center" ng-src="images/contrib/dwhitney.jpg" src="images/contrib/dwhitney.jpg">
+                    <h4 class="text-center"> <a ng-href="https://cs.brown.edu/people/dwhitney/" target="_blank" class="ng-binding" href="https://cs.brown.edu/people/dwhitney/">David Whitney</a> <br> <small class="ng-binding"> Brown University<br> <!-- ngIf: p.roleUrl --> <!-- ngIf: p.roleUrl == null --><span ng-if="p.roleUrl == null" class="ng-scope ng-binding"> Semantics and Cooking </span><!-- end ngIf: p.roleUrl == null --> </small> </h4>
+                    <br> </div>
+                <!-- end ngRepeat: p in phd_students -->
+            </div>
+            <br class="ng-scope">
+        </div>
+        <div class="footer">
+            <p>© Cornell University 2015</p>
+        </div>
+    </div>
+    <div class="navbar-fixed-bottom">
+        <div class="container-fluid">
+            <a href="http://weaver.systems/" target="_blank" class="navbar-btn btn-default btn pull-right"> <span class="glyphicon glyphicon-star"></span>&nbsp; Powered By Weaver</a>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53432628-1');
+        ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.js"></script>
+    <![endif]-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/lib/angular-file-upload.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/scripts.js"></script>
+    <iframe id="piggyDomainNotSupported" style="opacity: 0; display: none;"></iframe>
+    <input style="position: absolute; top: -10000px;">
+</body>
+
+</html>

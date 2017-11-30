@@ -1,0 +1,384 @@
+<html class="no-js">
+
+<head>
+    <style type="text/css">
+        @charset "UTF-8";
+        [ng\:cloak],
+        [ng-cloak],
+        [data-ng-cloak],
+        [x-ng-cloak],
+        .ng-cloak,
+        .x-ng-cloak,
+        .ng-hide {
+            display: none !important;
+        }
+        
+        ng\:form {
+            display: block;
+        }
+        
+        .ng-animate-block-transitions {
+            transition: 0s all!important;
+            -webkit-transition: 0s all!important;
+        }
+    </style>
+    <meta charset="utf-8">
+    <title>Robo Brain</title>
+    <meta name="description" content="">
+    <meta name="Keywords" content="arpit, agarwal, ashutosh, saxena, aditya, jami, ashesh, jain, ozan, sener, dipendra, misra, planit, tell me dave, plan it, tellmedave, robots, 3d images, cornell, stanford, machine learning, artificial intelligence, hema, koppula, large scale systems, large scale, knowledge base, knowledge engine,knowledge vault, grasping, robot grasping, dishwasher unloading, make3d, assistive, personal, robots, point cloud, humanoid, kinect, rgbd, robot manipulation, computer vision, robotics, robot learning, research, computer, cs, learning, vision, ai, perception, videos">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/font-awesome/css/font-awesome.min.css">
+    </head>
+
+<body ng-app="roboBrainApp" class="ng-scope">
+    <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Add your site or application content here -->
+    <div class="container ng-scope" ng-controller="LoginCtrl">
+        <div class="navbar navbar-default no-border" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <a class="navbar-brand" ng-href="#/" href="#/"> <img class="brand-logo" src="images/logo.svg"> <span class="brand-text">Robo Brain</span> </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav pull-right" id="menu">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <!-- <li><a ng-href="#/graph">Graph</a></li> -->
+                    <!-- <li><a ng-href="#/search">Search</a></li> -->
+                    <!-- <li><a ng-href="#/research">Research</a></li> -->
+                    <li><a href="applications.html">Applications</a></li>
+                    <li><a href="">Graph</a></li>
+                    <li><a href="people.html">People</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- ngView:  -->
+        <div ng-view="" class="ng-scope">
+            <style class="ng-scope">
+                .glyphicon.spinning {
+                    animation: spin 1s infinite linear;
+                    -webkit-animation: spin2 1s infinite linear;
+                }
+                
+                @keyframes spin {
+                    from {
+                        transform: scale(1) rotate(0deg);
+                    }
+                    to {
+                        transform: scale(1) rotate(360deg);
+                    }
+                }
+                
+                @-webkit-keyframes spin2 {
+                    from {
+                        -webkit-transform: rotate(0deg);
+                    }
+                    to {
+                        -webkit-transform: rotate(360deg);
+                    }
+                }
+            </style><span class="ng-scope"> RoboBrain contains knowledge from different sources stored as a </span><a href="http://arxiv.org/abs/1412.0691" class="ng-scope"><strong>graph</strong> </a><span class="ng-scope">. With our </span><a href="https://github.com/RoboBrainCode/RoboBrainWiki#robobrain-client-api" class="ng-scope"><strong>API</strong></a><span class="ng-scope"> , one can push and retrieve this knowledge. With our query language </span><a href="https://github.com/RoboBrainCode/RoboBrainWiki/blob/master/RaQueL.md#welcome-to-raquel" class="ng-scope"><strong>RaQueL</strong></a><span class="ng-scope"> , one can enable several robotics applications. </span>
+            <div class="container ng-scope">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">Play with RaQueL online</h3> </div>
+                            <div class="panel-body collapseParent">
+                                <div class="jumbotron">
+                                    <div class="container-fluid">
+                                        <label style="float:left">Try out:</label>
+                                        <select class="form-control" id="sel2">
+                                            <option value="Fetch ">Fetch </option>
+                                            <option value="Sort ">Sort </option>
+                                            <option value="Map ">Map </option>
+                                            <option value="Filter ">Filter </option>
+                                        </select>
+                                        <button type="button" class="btn btn-link" onclick="myFunction()" style="font-size:14px; font-weight:bold; outline:0">Insert the example</button>
+                                        <textarea class="form-control ng-pristine ng-valid" style="width: 110%; border:none; color:#000000; font-family: Courier; resize:none" rows="5" id="demo" ng-model="query.query"></textarea>
+                                        <div class="form-inline">
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-link" onclick="cleararea()" style="font-size:14px; font-weight:bold; outline:0; float:left">Clear</button>
+                                            </div>
+                                            <div class="form-group">
+                                                <button type="submit" class="btn btn-link" ng-click="sendQuery(query)" id="searchid" style="font-size:14px; font-weight:bold; outline:0; float:right">Execute</button>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div id="regeStr" style="overflow-y:scroll;text-wrap:unrestricted;text-align:left" class="col-md-12"> </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script type="text/javascript">
+                                    function myFunction() {
+                                        var x = document.getElementById("sel2").value;
+                                        var y = x.split(" ")
+                                        if (y[0] == "Fetch") {
+                                            document.getElementById("demo").value = ">>>fetch(\"({handle:'wall'})-[:`HAS_MATERIAL`]->(b)\")";
+                                        } else if (y[0] == "Sort") {
+                                            document.getElementById("demo").value = ">>>paths = fetch(\"(\{handle:'standing_human'})-[e*1..3]->({handle:'phone'})\")\n>>>SortBy(\paths,'Belief')";
+                                        } else if (y[0] == "Map") {
+                                            document.getElementById("demo").value = ">>>global affordances\n>>>objects =fetch(\"({handle:'sitting_human'})-[:`CAN_USE`]->(V)\")\n>>>affordances=lambda n:fetch(\"({handle :'\" + n + \"'})-[:`HAS_AFFORDANCE`]->(v)\")\n>>>iter = imap( lambda u: affordances(u) ,objects[1])\n>>>print iter.next()\n>>>print iter.next()";
+                                        } else if (y[0] == "Filter") {
+                                            document.getElementById("demo").value = ">>>global entities, media\n>>>entities = lambda n: fetch(\"(v)-[:`HAS_MEDIA`]->(\{handle :'\" + n + \"'})\")\n>>>media = lambda n:fetch(\"({handle :'\" + n + \"'})-[:`HAS_MEDIA`]->(v)\")\n>>>ind_media = lambda a: ifilter(lambda u: len(entities(u)[1])==1,(media(a))[1])\n>>>iter= ind_media('tv')\n>>>print iter.next()";
+                                        }
+                                    }
+
+                                    function cleararea() {
+                                        document.getElementById("demo").value = ">>>";
+                                        document.getElementById("regeStr").innerHTML = "";
+                                    }
+                                    $(document).keypress(function(e) {
+                                        if (e.which == 13) {
+                                            var content = ">>>";
+                                            var txt = $("textarea#demo");
+                                            txt.val(txt.val() + "\n>>>");
+                                            e.preventDefault();
+                                            count = $("#demo").val().length;
+                                        }
+                                    });
+                                </script>
+                                <style type="text/css">
+                                    p.fetch,
+                                    p.sort,
+                                    p.len,
+                                    p.map,
+                                    p.filter {
+                                        margin: 0px;
+                                        padding: 5px;
+                                        background: #eee;
+                                        border: solid 1px #fff;
+                                    }
+                                </style>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <h3>Robotic Applications</h3>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">PlanIt</h3> </div>
+                            <div class="panel-body collapseParent ng-scope" ng-controller="PlanItCtrl">
+                                <h4> <a href="http://planit.cs.cornell.edu/" target="_blank"><b>A Crowdsourcing Approach for Learning to Plan Paths from Large</b></a></h4> PlanIt uses RoboBrain to fetch trajectory parameters from different attributes computed from user preferences. You can try the example below. <img src="images/application/planit_robobrain.png" style="width:98%" class="application_image">
+                                <br>
+                                <br>
+                                <div class="input-group"> 
+                                    <select class="form-control ng-pristine ng-valid" ng-model="activity_name">
+                                        <option value="? string:dancing ?"></option>
+                                        <option value="dancing ">dancing </option>
+                                        <option value="watching ">watching </option>
+                                        <option value="interacting ">interacting </option>
+                                        <option value="reaching ">reaching </option>
+                                        <option value="relaxing ">relaxing </option>
+                                        <option value="sitting ">sitting </option>
+                                        <option value="watching ">watching </option>
+                                        <option value="working ">working </option>
+                                    </select>
+                                    <!-- <input type="text" class="form-control"  placeholder="Activity Name" aria-describedby="basic-addon1"> -->
+                                </div>
+                                <br>
+                                <button class="btn btn-lg btn-default" ng-click="getHeatMap()"> <span class="glyphicon glyphicon-refresh spinning" id="wheel"></span> Generate Heat Map </button>
+                                <!-- <button class="btn btn-default pull-right" ng-click="init()">
+    <span class="glyphicon glyphicon-star"></span> Show Trajectory 
+    </button> --><span id="warnDisp">Please wait while we query the roboBrain and obtain the heatmap.</span>
+                                <div id="heatMapResult">
+                                    <!-- <img src='images/planit/heatmap_activity_dancing.png'/> --></div>
+                                <!-- <span ng-click='loadMore()' class='pull-right' style="color:blue;cursor:pointer" id='loadmore'>Show More .....</span> -->
+                                <div class="row" id="seemore" style="display:block">
+                                    <div class="col-md-3">
+                                        <h3>Select files</h3> Choose Multiple Files
+                                        <input type="file" nv-file-select="" uploader="uploader" multiple="">
+                                        <br>
+                                        <!-- Choose Single File
+                    <input type="file" nv-file-select="" uploader="uploader" /> -->
+                                    </div>
+                                    <div class="col-md-1"> </div>
+                                    <div class="col-md-8" style="margin-bottom: 40px">
+                                        <h3>Upload queue(Max items:2)</h3>
+                                        <p class="ng-binding">Queue length: 0</p>
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th width="50%">Name </th>
+                                                    <th ng-show="uploader.isHTML5" class="">Size </th>
+                                                    <th ng-show="uploader.isHTML5" class="">Progress </th>
+                                                    <th>Status
+                                                        <!-- <th>Actions</th> --></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!-- ngRepeat: item in uploader.queue -->
+                                            </tbody>
+                                        </table>
+                                        <div>
+                                            <div> Queue progress:
+                                                <div class="progress" style="">
+                                                    <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }" style="width: 0%;"></div>
+                                                </div>
+                                            </div>
+                                            <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length" disabled="disabled"> <span class="glyphicon glyphicon-upload"></span> Upload all </button>
+                                            <button type="button" class="btn btn-warning btn-s" ng-click="uploader.cancelAll()" ng-disabled="!uploader.isUploading" disabled="disabled"> <span class="glyphicon glyphicon-ban-circle"></span> Cancel all </button>
+                                            <button type="button" class="btn btn-danger btn-s" ng-click="uploader.clearQueue()" ng-disabled="!uploader.queue.length" disabled="disabled"> <span class="glyphicon glyphicon-trash"></span> Remove all </button>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-lg btn-default" ng-click="getTrajectory()"> <span class="glyphicon glyphicon-refresh" id="wheel1"></span> Generate Trajectory </button>
+                                    <br>
+                                    <br> <span style="font-size:1.3em">Output</span>
+                                    <br>
+                                    <div id="trajResult"></div>
+                                    <br> <span style="font-size:1.3em">Console Messages</span>
+                                    <div class="col-md-12" id="consolemsg"> </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-md-12">
+                                        <div class="panel panel-primary">
+                                            <div class="panel-heading"> 
+                                                <h3 class="panel-title">RaQueL query</h3> </div>
+                                            <div class="panel-body collapse collapseChild" style="display: block;"> <code>trajectories = fetch("({handle:'egg_carton'})-[e:`IS_TRAJECTORY_OF`]-()")</code> </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <br> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">Anticipation</h3> </div>
+                            <div class="panel-body collapseParent panel-collapse collapse" style="display: block;">
+                                <h4><a href="http://pr.cs.cornell.edu/anticipation/" target="_blank" style="color:blue;text-decoration:underline">Anticipating Human Activities for Reactive Robotic Responses</a></h4>
+                                <br> The assistive robots working with humans should be able to understand human activities and also anticipate the future actions that the human can perform. In order to anticipate, the robot should reason over the action possibilities in the environment, i.e., object affordances, and how the actions can be performed, i.e., trajectories.
+                                <br>
+                                <br>
+                                <div class="col-md-12">
+                                    <div class="panel panel-primary">
+                                        <div class="panel-heading"> 
+                                            <h3 class="panel-title">RaQueL query</h3> </div>
+                                        <div class="panel-body collapse collapseChild" style="display: block;"> <code>trajectories = fetch("({handle:'standing_human'})-[e]-({handle:'refrigerator'})")<br> anticipated_trajectory = SortBy(trajectories, 'Belief') </code> </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <br> <img src="images/application/anticipation_robobrain.png" class="application_image" style="width:100%"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading"> 
+                                <h3 class="panel-title">Partner Projects</h3> </div>
+                            <div class="panel-body collapseParent collapsepanel-collapse collapse" style="display: block;">
+                                <div class="row">
+                                    <div class="col-md-5" style="margin-right:10%"> <img src="images/application/brain4cars.jpg" style="height:125px; width:110%;border:5px">
+                                        <h4><a href="http://brain4cars.com/" target="_blank"><b>Brain4Cars</b></a></h4> Intelligent car cabin sensing </div>
+                                    <div class="col-md-5"> <img src="images/application/robobarista.png" style="height:125px">
+                                        <h4><a href="http://robobarista.cs.cornell.edu/" target="_blank"><b>RoboBarista</b></a></h4> Manipulating novel objects using learning based on transfer of object parts </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style class="ng-scope">
+                .contaier {
+                    width: 580px;
+                    height: auto;
+                    overflow-x: scroll;
+                    -webkit-overflow-scrolling: touch;
+                }
+                
+                . span {
+                    margin-top: -20px;
+                    font-size: 15px;
+                }
+                
+                .row {
+                    margin-top: 40px;
+                    padding: 0 10px;
+                }
+                
+                .clickableChild {
+                    cursor: pointer;
+                }
+                
+                .clickableParent {
+                    cursor: pointer;
+                }
+            </style>
+            <script type="text/javascript" class="ng-scope">
+                jQuery(function($) {
+                    $('span.clickableChild').on("click", function(e) {
+                        if ($(this).hasClass('panel-collapsed')) {
+                            // expand the panel
+                            $(this).parents('.panel').find('.collapseChild').slideDown();
+                            $(this).removeClass('panel-collapsed');
+                            $(this).find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                        } else {
+                            // collapse the panel
+                            $(this).parents('.panel').find('.collapseChild').slideUp();
+                            $(this).addClass('panel-collapsed');
+                            $(this).find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                        }
+                    });
+                });
+            </script>
+            <script type="text/javascript" class="ng-scope">
+                jQuery(function($) {
+                    $('span.clickableParent').on("click", function(e) {
+                        if ($(this).hasClass('panel-collapsed')) {
+                            // expand the panel
+                            $(this).parents('.panel').find('.collapseParent').slideDown();
+                            $(this).removeClass('panel-collapsed');
+                            $(this).find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                        } else {
+                            // collapse the panel
+                            $(this).parents('.panel').find('.collapseParent').slideUp();
+                            $(this).addClass('panel-collapsed');
+                            $(this).find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <div class="footer">
+            <p>© Cornell University 2015</p>
+        </div>
+    </div>
+    <div class="navbar-fixed-bottom">
+        <div class="container-fluid">
+            <a href="http://weaver.systems/" target="_blank" class="navbar-btn btn-default btn pull-right"> <span class="glyphicon glyphicon-star"></span>&nbsp; Powered By Weaver</a>
+        </div>
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script async="" src="//www.google-analytics.com/analytics.js"></script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-53432628-1');
+        ga('send', 'pageview');
+    </script>
+    <!--[if lt IE 9]>
+    <script src="scripts/oldieshim.js"></script>
+    <![endif]-->
+    <script src="scripts/vendor.js"></script>
+    <script src="scripts/lib/angular-file-upload.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>
